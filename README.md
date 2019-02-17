@@ -34,7 +34,7 @@ optional arguments:
 **run a command from the cli class**
 ```
 $ python run.py example_command
-{'OK', 'status'}
+{'status': 'OK'}
 ```
 
 **pass args to a command**

@@ -24,4 +24,4 @@ class Cli():
         if fail:
             raise_exception(
                 inspect.currentframe(), 404, {"message": "You failed me on purpose"})
-        return {"status", "OK"}
+        return {"status": "OK"}
