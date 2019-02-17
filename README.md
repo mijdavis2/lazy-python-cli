@@ -1,4 +1,4 @@
-# Lazy CLI
+# Lazy Python CLI
 
 Basic python "cli" framework for lazy development and debugging.
 
