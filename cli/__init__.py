@@ -8,7 +8,7 @@ def raise_exception(frame, status=None, resp=None):
 
     Especially useful for api responses but can be used for whatever.
     """
-    raise Exception("\n\nError running {}: {}\n{}"
+    raise Exception("\n\nError running `{}`: {}\n{}"
                     .format(frame.f_code.co_name, status, resp))
 
 

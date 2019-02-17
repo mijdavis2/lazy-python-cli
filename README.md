@@ -51,7 +51,7 @@ Traceback (most recent call last):
     .format(frame.f_code.co_name, status, resp))
 Exception:
 
-Error running example_command: 404
+Error running `example_command`: 404
 {'message': 'You failed me on purpose'}
 ```
 
