@@ -65,11 +65,14 @@ Just a linter, but here you go...
 
 ## Development
 
-Argparse and error handling via raise_exception are dynamic. Use the class to buildout commands. Pass the frames and any status/msg into the raise_exception function. Never need to update valid commands or wade through messy tracebacks.
+Argparse and error handling are dynamic. Use the class to buildout commands. Pass the frames and any status/msg into the raise_exception function. Never need to update valid commands or wade through messy tracebacks if you spend a few seconds on custom error handling.
 
 ## Why?
 
-Lazy coding idea.
+Argparse is tedious and I hate parsing long tracebacks.
+
+- If I want to access a class method, it should be easy.
+- If I want to know exactly why something is _borked_, it should only take a quick glance.
 
 ## Caveats
 

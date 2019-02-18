@@ -1,15 +1,16 @@
 import inspect
+import traceback
 
-# TODO: Generic. Should be placed in a utils package.
 
-
+# TODO: Generic. Could be placed in a utils package.
 def raise_exception(frame, status=None, resp=None):
     """Use to dynamically raise a frame specific exception
 
     Especially useful for api responses but can be used for whatever.
     """
-    raise Exception("\n\nError running `{}`: {}\n{}"
-                    .format(frame.f_code.co_name, status, resp))
+    msg = "\nError running `{}`: {}".format(frame.f_code.co_name, status)
+    banner = "BORK".center(len(msg), "-")
+    raise Exception("\n{}{}\n{}".format(banner, msg, resp))
 
 
 class Cli():
