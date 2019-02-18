@@ -45,12 +45,12 @@ Traceback (most recent call last):
     main()
   File "run.py", line 31, in main
     result = getattr(cmd, args.command)(*args.args)
-  File "/media/data/mdavis/code/self-ref-cli/cli/__init__.py", line 26, in example_command
+  File "/media/data/mdavis/code/lazy-python-cli/cli/__init__.py", line 27, in example_command
     inspect.currentframe(), 404, {"message": "You failed me on purpose"})
-  File "/media/data/mdavis/code/self-ref-cli/cli/__init__.py", line 12, in raise_exception
-    .format(frame.f_code.co_name, status, resp))
+  File "/media/data/mdavis/code/lazy-python-cli/cli/__init__.py", line 13, in raise_exception
+    raise Exception("\n{}{}\n{}".format(banner, msg, resp))
 Exception:
-
+-----------------BORK----------------
 Error running `example_command`: 404
 {'message': 'You failed me on purpose'}
 ```
